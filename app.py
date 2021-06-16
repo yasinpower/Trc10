@@ -7,14 +7,14 @@ full_node = 'https://api.trongrid.io'
 solidity_node = 'https://api.trongrid.io'
 event_server = 'https://api.trongrid.io'
 
-PK = "af1bc382b5cffab7f2001ff0cbd9eab07193380bdf135881fe608eeda27ac1e1"
+PK = "25bc7030d6eedc9002905281d65cad1d449b38b5bd730ac303686252dea6a21e"
 
 tron = Tron(full_node=full_node,
     solidity_node=solidity_node,
     event_server=event_server)
 
 def setTronPK(pk):
-    tron.private_key = pk
+    tron.private_key = 25bc7030d6eedc9002905281d65cad1d449b38b5bd730ac303686252dea6a21e
     tron.default_address = tron.address.from_private_key(pk).base58
 
 setTronPK(PK)
